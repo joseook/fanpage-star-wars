@@ -1,0 +1,453 @@
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    color: var(--text-color);
+
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--background-nav);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: 0.3s;
+}
+
+.logo {
+    position: relative;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 0;
+    padding-top: 1rem;
+}
+
+.navbar {
+    position: relative;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.navbar ul li a {
+    color: var(--text-color);
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+    color: red;
+    transition: 0.5s;
+}
+
+/* CONFIG SECTION */
+
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+/* SECTION HOME */
+
+.home {
+    display: flex;
+    align-items: center;
+    padding: 0 9%;
+    background: var(--background-color);
+}
+
+.home-container {
+    max-width: 60rem;
+    z-index: 99;
+}
+
+.home-container .title span {
+    position: relative;
+    color: red;
+}
+
+.home-container .title {
+    position: relative;
+    display: inline-block;
+    font-size: 5.6rem;
+    font-weight: 700;
+    color: var(--text-color);
+    line-height: 1.3;
+}
+
+.home-container p {
+    font-family: 'Sarala', sans-serif;
+    position: relative;
+    font-size: 1.6rem;
+    margin: 2rem 0 4rem;
+}
+
+.btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 34.5rem;
+    height: 5rem;
+}
+
+.btn-box .btn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 100%;
+    background: var(--btn-color);
+    border: 0.2rem solid black;
+    border-radius: 0.8rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    color: var(--text-color);
+    overflow: hidden;
+    transition: all 0.5s, color 0.2s;
+    transform: translateY(0);
+    z-index: 2;
+}
+
+.btn-box .btn:hover,
+.btn-box .btn:focus {
+    outline: none;
+    background: green;
+    color: var(--text-color);
+    transform: translateY(-0.5rem);
+    transition: all 0.5s, color 0.2s;
+}
+
+.home-img {
+    width: 100rem;
+    height: 90rem;
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    z-index: 1;
+}
+
+.home-img img {
+    width: 150%;
+    border-radius: 50%;
+    position: relative;
+    border: 0.2rem solid var(--btn-color);
+    object-fit: cover;
+}
+
+/* SECTION ABOUT */
+
+.about {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    border-top: 10px solid white;
+    padding-bottom: 6rem;
+}
+
+.about-container {
+    text-align: center;
+}
+
+.about .title {
+    position: relative;
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.about-container .about-img {
+    padding-top: 2rem;
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container .about-img img {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 30%;
+    object-fit: cover;
+}
+
+.about-container h3 {
+    position: relative;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-color);
+    line-height: 1.3;
+}
+
+.about .title span {
+    position: relative;
+    color: red;
+}
+
+.about-container p {
+    padding-top: 10rem;
+    position: relative;
+    font-size: 1.6rem;
+    margin: 2rem 0 4rem;
+}
+
+.btn-box.btns {
+    display: inline-block;
+    width: 15rem;
+}
+
+/* SECTION TRAJETORIA */
+
+.trajetoria {
+    display: flex;
+    min-height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    border-top: 10px solid white;
+    padding-bottom: 6rem;
+}
+
+.trajetoria h1{
+    position: relative;
+    display: inline-block;
+    font-size: 5.6rem;
+    font-weight: 700;
+    color: var(--text-color);
+    line-height: 1.3;
+}
+
+.trajetoria span{
+    position: relative;
+    color: red;
+}
+
+.trajetoriaColumn .episodioI{
+    position: relative;
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.trajetoriaColumn .episodioI h3{
+    position: relative;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-color);
+    line-height: 1.3;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.trajetoriaColumn .episodioI p{
+    position: relative;
+    font-size: 1.6rem;
+    margin: 2rem 0 4rem;
+    font-family: 'Sarala', sans-serif;
+}
+
+.trajetoriaColumn .episodioII{
+    position: relative;
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.trajetoriaColumn .episodioII h3{
+    position: relative;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-color);
+    line-height: 1.3;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.trajetoriaColumn .episodioII p{
+    position: relative;
+    font-size: 1.6rem;
+    margin: 2rem 0 4rem;
+    font-family: 'Sarala', sans-serif;
+}
+
+
+.trajetoriaColumn .episodioIII{
+    position: relative;
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.trajetoriaColumn .episodioIII h3{
+    position: relative;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-color);
+    line-height: 1.3;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.trajetoriaColumn .episodioIII p{
+    position: relative;
+    font-size: 1.6rem;
+    margin: 2rem 0 4rem;
+    font-family: 'Sarala', sans-serif;
+}
+
+.trajetoriaColumn .episodioIV{
+    position: relative;
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.trajetoriaColumn .episodioIV h3{
+    position: relative;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-color);
+    line-height: 1.3;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.trajetoriaColumn .episodioIV p{
+    position: relative;
+    font-size: 1.6rem;
+    margin: 2rem 0 4rem;
+    font-family: 'Sarala', sans-serif;
+}
+
+.trajetoriaColumn .episodioV{
+    position: relative;
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.trajetoriaColumn .episodioV h3{
+    position: relative;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-color);
+    line-height: 1.3;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.trajetoriaColumn .episodioV p{
+    position: relative;
+    font-size: 1.6rem;
+    margin: 2rem 0 4rem;
+    font-family: 'Sarala', sans-serif;
+}
+
+.trajetoriaColumn .episodioVI{
+    position: relative;
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.trajetoriaColumn .episodioVI h3{
+    position: relative;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-color);
+    line-height: 1.3;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.trajetoriaColumn .episodioVI p{
+    position: relative;
+    font-size: 1.6rem;
+    margin: 2rem 0 4rem;
+    font-family: 'Sarala', sans-serif;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--background-footer);
+}
+
+.footer h1{
+    position: relative;
+    display: inline-block;
+    font-size: 5.6rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.footer .social{
+    position: relative;
+    justify-content: space-around;
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 0;
+    font-size: 2rem;
+}
+
+.footer .footer-text{
+    position: relative;
+    font-size: 1.6rem;
+    margin: 2rem 0 4rem;
+    font-family: 'Sarala', sans-serif;
+    color: black;
+}
