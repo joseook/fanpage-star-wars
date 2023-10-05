@@ -162,7 +162,6 @@ section {
 /* SECTION ABOUT */
 
 .about {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -195,9 +194,7 @@ section {
 }
 
 .about-container .about-img img {
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    margin-left: 130rem;
     width: 100%;
     border-radius: 30%;
     object-fit: cover;
@@ -221,12 +218,14 @@ section {
     position: relative;
     font-size: 1.6rem;
     margin: 2rem 0 4rem;
+    flex: 1;
 }
 
 .btn-box.btns {
     display: inline-block;
     width: 15rem;
 }
+
 
 /* SECTION TRAJETORIA */
 
